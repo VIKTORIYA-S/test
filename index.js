@@ -23,19 +23,37 @@
 // const user = "Victoriia";
 // alert(`Привет, ${user}`);
 
-let incr = 10,
-    decr = 10;
+// let incr = 10,
+//     decr = 10;
 
 // ++incr;
 // --decr;
 
-console.log(++incr);
-console.log(--decr);
+// console.log(++incr);
+// console.log(--decr);
 
-console.log(5*2 === "10");
+// console.log(5*2 === "10");
 
 
+const numberOfFilms = +prompt("Сколько фильмов Вы уже посмотрели?", " ");
 
+const personalMovieDB = {
+    count: numberOfFilms,
+    movies: {},
+    actors: {},
+    genres: [],
+    privat: false
+};
+
+let lastFilm = prompt("Назовите один из последних просмотренных фильмов...", "");
+let grade = prompt("На сколько Вы его оцениваете?", "");
+let lastFilmTwo = prompt("Назовите один из последних просмотренных фильмов...", "");
+let gradeTwo = prompt("На сколько Вы его оцениваете?", "");
+
+personalMovieDB.movies[lastFilm] = grade;
+personalMovieDB.movies[lastFilmTwo] = gradeTwo;
+
+console.log(personalMovieDB);
 
 
 
